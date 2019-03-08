@@ -1,0 +1,2 @@
+Este es un archivo de prueba para comprobar
+que puedo subir la informacion a github correctamente
