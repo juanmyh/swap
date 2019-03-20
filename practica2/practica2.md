@@ -2,4 +2,4 @@
 
 
 Prueba para ver como añado una captura con markdown
-![img](/capturas/captura1)
+![img](swap/practica2/capturas/captura1.png)
