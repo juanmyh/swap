@@ -8,31 +8,32 @@
 5. [Referencias](#id5)
 
 
-<div id='id1' />
-## Qué es Google
+
+
+## Qué es Google <a name="id1"></a>
 
 Google es una compañía estadounidense fundada en septiembre de 1998 cuyo producto principal es un motor de búsqueda creado por Larry Page y Sergey Brin. El término suele utilizarse como sinónimo de este buscador, el más usado en el mundo.
 
-![imagen1](imagenes/imagen1.png)
+![imagen1](imagenes/imagen1.jpg)
 
 La característica más destacada de Google como buscador es su facilidad de uso. La página principal se limita a presentar el logotipo de la empresa (en ocasiones, adornado con imágenes que permiten recordar algún evento o realizar un homenaje), un cuadro de búsqueda (para introducir los términos a buscar) y algunos enlaces hacia otros servicios de la firma.
 
 
-<div id='id2' />
-## Historia
 
-![imagen2](imagenes/imagen2.png)
+## Historia <a name="id2"></a>
+
+![imagen2](imagenes/imagen2.jpg)
 
 La historia de google tiene comienzo en el año 1995, donde en la Universidad de stanford.
 Donde un recién llegado Larry Page se estaba planteando estudiar en Stanford y Sergey Brin, que ya estudiaba allí, fue el que se encargo de mostrarle el campus.
 
-![imagen3](imagenes/imagen3.png)
+![imagen3](imagenes/imagen3.jpg)
 
 Se dice que al principio ambos no se ponían de acuerdo en casi nada, a pesar de todo al año siguiente finalmente se aliaron y comenzaron a trabajar, fue desde sus dormitorios donde construyeron un motor de búsqueda el cual utilizaba enlaces para determinar la importancia de cada página en la Web. Dicho motor se llamo Backrub.
 
 Poco después Backrub pasó a llamarse Google, el nombre proviene de un juego de palabras con el término “googol”, acuñado por Milton Sirotta, sobrino del matemático norteamericano Edward Kasner, para referirse al número representado por un 1 seguido de 100 ceros. El uso del término refleja la misión de la compañía de organizar la inmensa cantidad de información disponible en la web y en el mundo.
 
-![imagen4](imagenes/imagen4.png)
+![imagen4](imagenes/imagen4.jpg)
 
 Durante los siguientes años, Google no solo captó la atención de la comunidad académica, sino también la de los inversores de Silicon Valley. En agosto de 1998, Andy Bechtolsheim (cofundador de Sun Microsystems) extendió un cheque por valor de 100.000 dólares a Larry y Sergey, lo que les permitió constituir oficialmente Google Inc. Con esta inversión, el nuevo equipo evolucionó y pasó de trabajar desde sus dormitorios a crear su primera oficina.
 
@@ -43,8 +44,8 @@ En los años siguientes, Google creció rápidamente: la empresa contrató ingen
 Actualmente, Google cuenta con más de 60.000 empleados en 50 países y desarrolla cientos de productos que utilizan miles de millones de personas en todo el mundo, como YouTube, Android, Smartbox o, por supuesto, la Búsqueda de Google.
 
 
-<div id='id3' />
-## Hardware
+
+## Hardware <a name="id3"></a>
 
 ### Hardware original
 
@@ -88,18 +89,18 @@ Desde el punto de vista de una operación, cuando una computadora cliente intent
 
 Google tiene numerosos centros de datos repartidos por todo el mundo. Al menos 12 instalaciones importantes de centros de datos de Google están ubicadas en los Estados Unidos. Los centros más grandes conocidos se encuentran en The Dalles, Oregon; Atlanta, Georgia; Reston, Virginia; Lenoir, Carolina del Norte; y Moncks Corner, Carolina del Sur. En Europa, los centros más grandes conocidos están en Eemshaven y Groningen en los Países Bajos y Mons, Bélgica.  Se afirma que el Centro de datos de Oceanía de Google se encuentra en Sydney, Australia.
 
-![imagen5](imagenes/imagen5.png)
+![imagen5](imagenes/imagen5.jpg)
 
 
-<div id='id4' />
-## Funcionamiento de las consultas
+
+## Funcionamiento de las consultas <a name="id4"></a>
 
 Cuando un usuario ingresa una consulta a Google (como www.google.com/search?q=ieee+society), el navegador del usuario primero realiza una búsqueda en el sistema de nombres de dominio (DNS) para asignar www.google.com a una IP particular. dirección. Para proporcionar la capacidad suficiente para manejar el tráfico de consultas, nuestro servicio consta de varios clústeres distribuidos en todo el mundo. Cada grupo tiene alrededor de unos pocos miles de máquinas, y la configuración distribuida geográficamente nos protege contra fallas catastróficas del centro de datos (como las que surgen de terremotos y fallas eléctricas a gran escala). Un sistema de equilibrio de carga basado en DNS selecciona un clúster teniendo en cuenta la proximidad geográfica del usuario a cada clúster físico. El sistema de balanceo de carga minimiza el tiempo de ida y vuelta para la solicitud del usuario, al tiempo que considera la capacidad disponible en los diversos grupos.
 
 
 El navegador del usuario envía una solicitud de protocolo de transporte de hipertexto (HTTP) a uno de estos clústeres y, posteriormente, el procesamiento de esa consulta es completamente local para ese clúster. Un equilibrador de carga basado en hardware en cada clúster monitorea el conjunto disponible de servidores web de Google (GWS) y realiza el equilibrio de carga local de las solicitudes en un conjunto de ellos. Después de recibir una consulta, una máquina GWS coordina la ejecución de la consulta y da formato a los resultados en una respuesta del Lenguaje de marcado de hipertexto (HTML) al navegador del usuario. La figura 1 ilustra estos pasos.
 
-![figura1](imagenes/figura1.png)
+![figura1](imagenes/figura1.jpg)
 
 La ejecución de la consulta consta de dos grandes fases. En la primera fase, los servidores de índices consultan un índice invertido que asigna cada palabra de consulta a una lista de documentos coincidentes (la lista de resultados). Los servidores de índice luego determinan un conjunto de documentos relevantes mediante la intersección de las listas de resultados de las palabras de consulta individuales, y calculan una puntuación de relevancia para cada documento. Esta puntuación de relevancia determina el orden de los resultados en la página de salida.
 
@@ -113,8 +114,8 @@ El resultado final de esta primera fase de ejecución de consultas es una lista 
 
 El clúster docserver debe tener acceso a una copia en línea de baja latencia de toda la Web. De hecho, debido a la replicación requerida para el rendimiento y la disponibilidad, Google almacena docenas de copias de la Web en todos sus grupos. Además de las fases de indexación y servicio de documentación, un GWS también inicia varias otras tareas auxiliares al recibir una consulta, como enviar la consulta a un sistema de revisión ortográfica y a un sistema de servicio de anuncios para generar anuncios relevantes (si los hay). Cuando se completan todas las fases, un GWS genera el HTML apropiado para la página de salida y lo devuelve al navegador del usuario.
 
-<div id='id5' />
-## Referencias
+
+## Referencias <a name="id5"></a>
 
 1. https://about.google/
 2. http://www.artificialbrains.com/google/datacenters
