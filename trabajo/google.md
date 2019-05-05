@@ -33,7 +33,7 @@ Se dice que al principio ambos no se ponían de acuerdo en casi nada, a pesar de
 
 Poco después Backrub pasó a llamarse Google, el nombre proviene de un juego de palabras con el término “googol”, acuñado por Milton Sirotta, sobrino del matemático norteamericano Edward Kasner, para referirse al número representado por un 1 seguido de 100 ceros. El uso del término refleja la misión de la compañía de organizar la inmensa cantidad de información disponible en la web y en el mundo.
 
-![imagen4](imagenes/imagen4.jpg)
+![imagen4](imagenes/imagen4.JPG)
 
 Durante los siguientes años, Google no solo captó la atención de la comunidad académica, sino también la de los inversores de Silicon Valley. En agosto de 1998, Andy Bechtolsheim (cofundador de Sun Microsystems) extendió un cheque por valor de 100.000 dólares a Larry y Sergey, lo que les permitió constituir oficialmente Google Inc. Con esta inversión, el nuevo equipo evolucionó y pasó de trabajar desde sus dormitorios a crear su primera oficina.
 
@@ -89,7 +89,7 @@ Desde el punto de vista de una operación, cuando una computadora cliente intent
 
 Google tiene numerosos centros de datos repartidos por todo el mundo. Al menos 12 instalaciones importantes de centros de datos de Google están ubicadas en los Estados Unidos. Los centros más grandes conocidos se encuentran en The Dalles, Oregon; Atlanta, Georgia; Reston, Virginia; Lenoir, Carolina del Norte; y Moncks Corner, Carolina del Sur. En Europa, los centros más grandes conocidos están en Eemshaven y Groningen en los Países Bajos y Mons, Bélgica.  Se afirma que el Centro de datos de Oceanía de Google se encuentra en Sydney, Australia.
 
-![imagen5](imagenes/imagen5.jpg)
+![imagen5](imagenes/imagen5.JPG)
 
 
 
@@ -100,7 +100,7 @@ Cuando un usuario ingresa una consulta a Google (como www.google.com/search?q=ie
 
 El navegador del usuario envía una solicitud de protocolo de transporte de hipertexto (HTTP) a uno de estos clústeres y, posteriormente, el procesamiento de esa consulta es completamente local para ese clúster. Un equilibrador de carga basado en hardware en cada clúster monitorea el conjunto disponible de servidores web de Google (GWS) y realiza el equilibrio de carga local de las solicitudes en un conjunto de ellos. Después de recibir una consulta, una máquina GWS coordina la ejecución de la consulta y da formato a los resultados en una respuesta del Lenguaje de marcado de hipertexto (HTML) al navegador del usuario. La figura 1 ilustra estos pasos.
 
-![figura1](imagenes/figura1.jpg)
+![figura1](imagenes/figura1.JPG)
 
 La ejecución de la consulta consta de dos grandes fases. En la primera fase, los servidores de índices consultan un índice invertido que asigna cada palabra de consulta a una lista de documentos coincidentes (la lista de resultados). Los servidores de índice luego determinan un conjunto de documentos relevantes mediante la intersección de las listas de resultados de las palabras de consulta individuales, y calculan una puntuación de relevancia para cada documento. Esta puntuación de relevancia determina el orden de los resultados en la página de salida.
 
