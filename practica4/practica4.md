@@ -20,18 +20,18 @@ que tiene es el de una clave generada.
 ![captura1](capturas/captura1.png)
 
 A continuación modificamos el archivo de configuración añadiendo las
-dos nuevas líneas :
-*SSLCertificateFile /etc/apache2/ssl/apache.crt
-SSLCertificateKeyFile /etc/apache2/ssl/apache.key*
+dos nuevas líneas :  
+*SSLCertificateFile /etc/apache2/ssl/apache.crt  
+SSLCertificateKeyFile /etc/apache2/ssl/apache.key*  
 
 justo debajo de *SSLEngine on* como podemos ver en la siguente captura.
 
 ![captura2](capturas/captura2.png)
 
-Ahora activamos el sitio como y reiniciamos apache con las siguientes ordenes:
-*a2ensite default-ssl
-service apache2 reload*
-Luego vamos a comrpobar que funciona correctamente por medio del acceso curl.
+Ahora activamos el sitio como y reiniciamos apache con las siguientes ordenes:  
+*a2ensite default-ssl  
+service apache2 reload*  
+Luego vamos a comprobar que funciona correctamente por medio del acceso curl.
 
 ![captura3](capturas/captura3.png)
 
@@ -48,12 +48,12 @@ a nuestra máquina servidora 2  y ejecutamos lo mismo de antes, además de
 modificar el fichero de configuración tal y como hicimos antes.
 
 Una vez listo nuestro servidor2 copiamos los archivos al balanceador1 y
-añadimos las siguientes líneas:
+añadimos las siguientes líneas:  
 
-*listen 443 ssl;
-ssl on;
-ssl_certificate /tmp/apache.crt;
-ssl_certificate_key /tmp/apache.key;*
+*listen 443 ssl;  
+ssl on;  
+ssl_certificate /tmp/apache.crt;  
+ssl_certificate_key /tmp/apache.key;*  
 
 al archivo de configuración de nginx como muestra la captura.
 
@@ -75,7 +75,8 @@ y SSH.
 
 Para ello haremos uso del siguiente script :
 
-`# (1) Eliminar todas las reglas (configuración limpia)
+~~~
+# (1) Eliminar todas las reglas (configuración limpia)
 iptables -F
 iptables -X
 iptables -Z
@@ -96,7 +97,8 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A OUTPUT -p tcp --sport 80 -j ACCEPT
 # (6) Abrir los puertos HTTPS (443) de servidor web
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT
-iptables -A OUTPUT -p tcp --sport 443 -j ACCEPT`
+iptables -A OUTPUT -p tcp --sport 443 -j ACCEPT
+~~~
 
 Para hacer que dicho script se ejecute cuando se lanza el sistema, haremos uso
 del fichero *rc.local* situado en */etc/rc.local* añadiendo la ejecución del
