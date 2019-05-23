@@ -17,7 +17,7 @@ en la siguiente captura.
 Acto seguido añadimos a la tabla algunos valores de prueba, y además vemos su
 distribución.
 
-[captura2](capturas/captura2.png)
+![captura2](capturas/captura2.png)
 
 Una vez creada ya la base de datos, vamos a guardarla en un archivo .sql para
 poder mandarla a nuestra máquina2 y comenzar a operar con ellas, para ello
@@ -92,5 +92,5 @@ hacer la inserción allí.
 
 ![captura13](capturas/captura13.png)
 
-efectivamente la inserción también se actualiza en nuestra máquina2, así pues
+Efectivamente la inserción también se actualiza en nuestra máquina2, así pues
 damos está práctica por finalizada.
